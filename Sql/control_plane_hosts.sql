@@ -1,0 +1,16 @@
+create table if not exists control_plane_hosts(
+service_code varchar(255) not null,
+hyper_kube varchar(255) null,
+node_sync varchar(255) null,
+master_node_architecture varchar(255) null,
+sdn_to_sdn varchar(255) null,
+sdn_to_ovs char null,
+api_server_yaml varchar(255) null,
+controllers_yaml varchar(255) null,
+etcd_yaml varchar(255) null,
+yaml_to_props_converter varchar(255) null,
+yaml_to_zml_converter varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint control_plane_hosts_pk primary key(service_code));

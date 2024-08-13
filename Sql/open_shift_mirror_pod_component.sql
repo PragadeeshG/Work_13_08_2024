@@ -1,0 +1,16 @@
+create table if not exists open_shift_mirror_pod_component(
+pods_config varchar(255) not null,
+admin_console_url varchar(255) null,
+kube_config_file varchar(255) null,
+origin varchar(255) null,
+cloud_provider varchar(255) null,
+origin_master char null,
+library_origin varchar(255) null,
+lib_executor varchar(255) null,
+kubelet_plugin varchar(255) null,
+container_runbook varchar(255) null,
+image_source varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint open_shift_mirror_pod_component_pk primary key(pods_config));
